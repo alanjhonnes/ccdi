@@ -17,3 +17,9 @@ parameters:
     debug_toolbar:          true
     debug_redirects:        false
     use_assetic_controller: true
+    
+    sonata_admin.title: 'Sonata Project'
+    sonata_admin.logo_title: /bundles/sonataadmin/logo_title.png
+    sonata_media.cdn.host: '/jobs/ccdi-page/uploads/media'
+    sonata_page.varnish.command: 'if [ ! -r "/etc/varnish/secret" ]; then echo "VALID ERROR :/"; else varnishadm -S /etc/varnish/secret -T 127.0.0.1:6082 {{ COMMAND }} "{{ EXPRESSION }}"; fi;'
+
