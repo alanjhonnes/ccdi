@@ -19,8 +19,8 @@ sonata_block:
 
         # Builtin Block
         sonata.block.service.text:
-        sonata.block.service.container:
-        sonata.block.service.template:
+        #sonata.block.service.container:
+        #sonata.block.service.template:
 
         # PageBundle's Blocks
         sonata.page.block.container:

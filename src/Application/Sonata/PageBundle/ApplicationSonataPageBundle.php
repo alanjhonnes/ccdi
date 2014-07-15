@@ -11,6 +11,8 @@
 namespace Application\Sonata\PageBundle;
 
 use Symfony\Component\HttpKernel\Bundle\Bundle;
+use Symfony\Component\DependencyInjection\ContainerBuilder;
+use Application\Sonata\PageBundle\DependencyInjection\Compiler\ApplicationSonataPageCompilerPass;
 
 
 /**
@@ -23,6 +25,14 @@ use Symfony\Component\HttpKernel\Bundle\Bundle;
  */
 class ApplicationSonataPageBundle extends Bundle
 {
+    
+    public function build(ContainerBuilder $container)
+    {
+        parent::build($container);
+
+        $container->addCompilerPass(new ApplicationSonataPageCompilerPass());
+    }
+    
     /**
      * {@inheritdoc}
      */

@@ -1,0 +1,412 @@
+@font-face {
+  font-family: 'open_sanslight';
+  src: url('../fonts/opensans/OpenSans-Light-webfont.eot');
+  src: url('../fonts/opensans/OpenSans-Light-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/OpenSans-Light-webfont.woff') format('woff'), url('../fonts/opensans/OpenSans-Light-webfont.ttf') format('truetype'), url('../fonts/opensans/OpenSans-Light-webfont.svg#open_sanslight') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sanslight_italic';
+  src: url('../fonts/opensans/OpenSans-LightItalic-webfont.eot');
+  src: url('../fonts/opensans/OpenSans-LightItalic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/OpenSans-LightItalic-webfont.woff') format('woff'), url('../fonts/opensans/OpenSans-LightItalic-webfont.ttf') format('truetype'), url('../fonts/opensans/OpenSans-LightItalic-webfont.svg#open_sanslight_italic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sansregular';
+  src: url('../fonts/opensans/OpenSans-Regular-webfont.eot');
+  src: url('../fonts/opensans/OpenSans-Regular-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/OpenSans-Regular-webfont.woff') format('woff'), url('../fonts/opensans/OpenSans-Regular-webfont.ttf') format('truetype'), url('../fonts/opensans/OpenSans-Regular-webfont.svg#open_sansregular') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sansitalic';
+  src: url('../fonts/opensans/OpenSans-Italic-webfont.eot');
+  src: url('../fonts/opensans/OpenSans-Italic-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/OpenSans-Italic-webfont.woff') format('woff'), url('../fonts/opensans/OpenSans-Italic-webfont.ttf') format('truetype'), url('../fonts/opensans/OpenSans-Italic-webfont.svg#open_sansitalic') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'open_sansbold';
+  src: url('../fonts/opensans/OpenSans-Bold-webfont.eot');
+  src: url('../fonts/opensans/OpenSans-Bold-webfont.eot?#iefix') format('embedded-opentype'), url('../fonts/opensans/OpenSans-Bold-webfont.woff') format('woff'), url('../fonts/opensans/OpenSans-Bold-webfont.ttf') format('truetype'), url('../fonts/opensans/OpenSans-Bold-webfont.svg#open_sansbold') format('svg');
+  font-weight: normal;
+  font-style: normal;
+}
+/*! HTML5 Boilerplate v4.3.0 | MIT License | http://h5bp.com/ */
+/*
+ * What follows is the result of much research on cross-browser styling.
+ * Credit left inline and big thanks to Nicolas Gallagher, Jonathan Neal,
+ * Kroc Camen, and the H5BP dev community and team.
+ */
+/* ==========================================================================
+   Base styles: opinionated defaults
+   ========================================================================== */
+html,
+button,
+input,
+select,
+textarea {
+  color: #222;
+}
+html {
+  font-size: 1em;
+  line-height: 1.4;
+  overflow: hidden;
+}
+/*
+ * Remove text-shadow in selection highlight: h5bp.com/i
+ * These selection rule sets have to be separate.
+ * Customize the background color to match your design.
+ */
+::-moz-selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+::selection {
+  background: #b3d4fc;
+  text-shadow: none;
+}
+/*
+ * A better looking default horizontal rule
+ */
+hr {
+  display: block;
+  height: 1px;
+  border: 0;
+  border-top: 1px solid #ccc;
+  margin: 1em 0;
+  padding: 0;
+}
+/*
+ * Remove the gap between images, videos, audio and canvas and the bottom of
+ * their containers: h5bp.com/i/440
+ */
+audio,
+canvas,
+img,
+video {
+  vertical-align: middle;
+}
+/*
+ * Remove default fieldset styles.
+ */
+fieldset {
+  border: 0;
+  margin: 0;
+  padding: 0;
+}
+/*
+ * Allow only vertical resizing of textareas.
+ */
+textarea {
+  resize: vertical;
+}
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+html {
+  overflow: hidden;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: 'open_sanslight';
+  background-color: #ffffff;
+}
+h1,
+h2,
+h3,
+strong {
+  font-family: 'open_sansbold';
+}
+h4,
+h5,
+h6 {
+  font-family: 'open_sansregular';
+}
+#wrapper {
+  width: 100%;
+  height: 100%;
+}
+ul {
+  padding-left: 0;
+}
+#page-container {
+  display: block;
+  position: relative;
+  height: 100%;
+  -webkit-perspective: 1200px;
+  -moz-perspective: 1200px;
+  perspective: 1200px;
+}
+section {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  visibility: hidden;
+  overflow: auto;
+  -webkit-backface-visibility: hidden;
+  -moz-backface-visibility: hidden;
+  backface-visibility: hidden;
+  -webkit-transform: translate3d(0, 0, 0);
+  -moz-transform: translate3d(0, 0, 0);
+  transform: translate3d(0, 0, 0);
+  -webkit-transform-style: preserve-3d;
+  -moz-transform-style: preserve-3d;
+  transform-style: preserve-3d;
+  background-color: #990000;
+}
+section h1 {
+  font-weight: 300;
+  font-size: 4.4em;
+  line-height: 1;
+  margin: 30px 0px;
+  width: 100%;
+  text-align: center;
+  text-transform: uppercase;
+}
+section h1 span {
+  font-weight: 400;
+  font-size: 40%;
+  text-transform: none;
+  display: block;
+  opacity: 0.4;
+}
+section h1 strong {
+  color: rgba(0, 0, 0, 0.1);
+}
+.page-current,
+.no-js .page {
+  visibility: visible;
+  z-index: 1;
+}
+.no-js body {
+  overflow: auto;
+}
+.page-ontop {
+  z-index: 999;
+}
+/* Triggers (menu and button) */
+.pt-triggers {
+  position: absolute;
+  width: 300px;
+  z-index: 999999;
+  margin-top: 130px;
+  top: 12%;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+}
+.pt-triggers div {
+  border: none;
+  font-size: 13px;
+  font-weight: 700;
+  text-transform: uppercase;
+  margin: 20px auto;
+  padding: 0px 20px;
+  line-height: 50px;
+  height: 50px;
+  width: 300px;
+  cursor: pointer;
+  text-align: center;
+  display: block;
+  box-shadow: 0 3px 0 rgba(0, 0, 0, 0.1);
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  background-color: #fff;
+}
+.pt-touch-button {
+  background: #fff;
+  color: #444;
+}
+.img-responsive {
+  border-radius: 4px;
+  background-color: #ffffff;
+  border: 2px solid #000000;
+  padding: 10px;
+}
+/* ==========================================================================
+   Helper classes
+   ========================================================================== */
+/*
+ * Clearfix: contain floats
+ *
+ * For modern browsers
+ * 1. The space content is one way to avoid an Opera bug when the
+ *    `contenteditable` attribute is included anywhere else in the document.
+ *    Otherwise it causes space to appear at the top and bottom of elements
+ *    that receive the `clearfix` class.
+ * 2. The use of `table` rather than `block` is only necessary if using
+ *    `:before` to contain the top-margins of child elements.
+ */
+.clearfix:before,
+.clearfix:after {
+  content: " ";
+  /* 1 */
+  display: table;
+  /* 2 */
+}
+.clearfix:after {
+  clear: both;
+}
+/*
+ * For IE 6/7 only
+ * Include this rule to trigger hasLayout and contain floats.
+ */
+.clearfix {
+  *zoom: 1;
+}
+/* ==========================================================================
+   EXAMPLE Media Queries for Responsive Design.
+   These examples override the primary ('mobile first') styles.
+   Modify as content requires.
+   ========================================================================== */
+@media only screen and (min-width: 35em) {
+  /* Style adjustments for viewports that meet the condition */
+}
+@media print, (-o-min-device-pixel-ratio: 5/4), (-webkit-min-device-pixel-ratio: 1.25), (min-resolution: 120dpi) {
+  /* Style adjustments for high resolution devices */
+}
+/* ==========================================================================
+   Print styles.
+   Inlined to avoid required HTTP connection: h5bp.com/r
+   ========================================================================== */
+@media print {
+  * {
+    background: transparent !important;
+    color: #000 !important;
+    /* Black prints faster: h5bp.com/s */
+    box-shadow: none !important;
+    text-shadow: none !important;
+  }
+  a,
+  a:visited {
+    text-decoration: underline;
+  }
+  a[href]:after {
+    content: " (" attr(href) ")";
+  }
+  abbr[title]:after {
+    content: " (" attr(title) ")";
+  }
+  /*
+     * Don't show links for images, or javascript/internal links
+     */
+  .ir a:after,
+  a[href^="javascript:"]:after,
+  a[href^="#"]:after {
+    content: "";
+  }
+  pre,
+  blockquote {
+    border: 1px solid #999;
+    page-break-inside: avoid;
+  }
+  thead {
+    display: table-header-group;
+    /* h5bp.com/t */
+  }
+  tr,
+  img {
+    page-break-inside: avoid;
+  }
+  img {
+    max-width: 100% !important;
+  }
+  @page {
+    margin: 0.5cm;
+  }
+  p,
+  h2,
+  h3 {
+    orphans: 3;
+    widows: 3;
+  }
+  h2,
+  h3 {
+    page-break-after: avoid;
+  }
+}
+/* animation sets */
+/* move from / to  */
+.page-moveFromTop {
+  -webkit-animation: moveFromTop .6s ease 0.2s both;
+  -moz-animation: moveFromTop .6s ease 0.2s both;
+  animation: moveFromTop .6s ease 0.2s both;
+}
+.page-moveFromBottom {
+  -webkit-animation: moveFromBottom .6s ease 0.2s both;
+  -moz-animation: moveFromBottom .6s ease 0.2s both;
+  animation: moveFromBottom .6s ease 0.2s both;
+}
+/********************************* keyframes **************************************/
+/* move from / to  */
+@-webkit-keyframes moveFromTop {
+  from {
+    -webkit-transform: translateY(-100%);
+  }
+}
+@-moz-keyframes moveFromTop {
+  from {
+    -moz-transform: translateY(-100%);
+  }
+}
+@keyframes moveFromTop {
+  from {
+    transform: translateY(-100%);
+  }
+}
+@-webkit-keyframes moveFromBottom {
+  from {
+    -webkit-transform: translateY(100%);
+  }
+}
+@-moz-keyframes moveFromBottom {
+  from {
+    -moz-transform: translateY(100%);
+  }
+}
+@keyframes moveFromBottom {
+  from {
+    transform: translateY(100%);
+  }
+}
+/* scale and fade */
+.page-scaleDown {
+  -webkit-animation: scaleDown .7s ease both;
+  -moz-animation: scaleDown .7s ease both;
+  animation: scaleDown .7s ease both;
+}
+/********************************* keyframes **************************************/
+/* scale and fade */
+@-webkit-keyframes scaleDown {
+  to {
+    opacity: 0;
+    -webkit-transform: scale(0.8);
+  }
+}
+@-moz-keyframes scaleDown {
+  to {
+    opacity: 0;
+    -moz-transform: scale(0.8);
+  }
+}
+@keyframes scaleDown {
+  to {
+    opacity: 0;
+    transform: scale(0.8);
+  }
+}

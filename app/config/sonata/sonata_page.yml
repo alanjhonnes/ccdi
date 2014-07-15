@@ -17,6 +17,7 @@ sonata_page:
     ignore_uri_patterns:
         - ^/admin(.*)
         - ^/api/(.*)
+        - ^/tv/(.*)
 
     ignore_route_patterns:
         - (.*)admin(.*)     # ignore admin route, ie route containing 'admin'
@@ -46,67 +47,109 @@ sonata_page:
         javascripts:
             - assetic/sonata_front_js.js
 
-    default_template: default
+    default_template: fullscreen
     templates:
-        default:
-            path: 'ApplicationSonataPageBundle::demo_layout.html.twig'
-            name: 'default'
+        fullscreen:
+            path: 'CCDITVBundle::Fullscreen.html.twig'
+            name: 'Fullscreen'
             containers:
-                 header:
-                     name: Header
-                 content_top:
-                     name: Top content
-                 content:
-                     name: Main content
-                 content_bottom:
-                     name: Bottom content
-                 footer:
-                     name: Footer
+                 content: 
+                     name: Conteúdo
             matrix:
                  layout: |
-                     HHHHHHHH
-                     TTTTTTTT
                      CCCCCCCC
-                     BBBBBBBB
-                     FFFFFFFF
-
                  mapping:
-                     H: header
-                     T: content_top
                      C: content
-                     B: content_bottom
-                     F: footer
-
         2columns:
-            path: 'ApplicationSonataPageBundle::demo_2columns_layout.html.twig'
-            name: '2 columns layout'
+            path: 'CCDITVBundle::2Columns.html.twig'
+            name: '2 Colunas'
+            containers:
+                 left_col:
+                     name: Coluna esquerda
+                 right_col:
+                     name: Coluna direita
+            matrix:
+                 layout: |
+                     LLLLRRRR
+                 mapping:
+                     L: left_col
+                     R: right_col
+        header2columns:
+            path: 'CCDITVBundle::Header-2Columns.html.twig'
+            name: 'Cabeçalho + 2 colunas'
             containers:
                  header:
-                     name: Header
-                 content_top:
-                     name: Top content
+                     name: Cabeçalho
                  left_col:
-                     name: Left content
-                 rigth_col:
-                     name: Right content
-                 content_bottom:
-                     name: Bottom content
-                 footer:
-                     name: Footer
+                     name: Coluna esquerda
+                 right_col:
+                     name: Coluna direita
             matrix:
                  layout: |
                      HHHHHHHH
-                     TTTTTTTT
                      LLLLRRRR
-                     BBBBBBBB
-                     FFFFFFFF
-
                  mapping:
                      H: header
-                     T: content_top
                      L: left_col
-                     R: rigth_col
-                     B: content_bottom
+                     R: right_col
+        header2columnsfooter:
+            path: 'CCDITVBundle::Header-2Columns-Footer.html.twig'
+            name: 'Cabeçalho + 2 colunas + Rodapé'
+            containers:
+                 header:
+                     name: Cabeçalho
+                 left_col:
+                     name: Coluna esquerda
+                 right_col:
+                     name: Coluna direita
+                 footer:
+                     name: Rodapé
+            matrix:
+                 layout: |
+                     HHHHHHHH
+                     LLLLRRRR
+                     FFFFFFFF
+                 mapping:
+                     H: header
+                     L: left_col
+                     R: right_col
+                     F: footer
+        2columnsfooter:
+            path: 'CCDITVBundle::2Columns-Footer.html.twig'
+            name: '2 colunas + Rodapé'
+            containers:
+                 left_col:
+                     name: Coluna esquerda
+                 right_col:
+                     name: Coluna direita
+                 footer:
+                     name: Rodapé
+            matrix:
+                 layout: |
+                     LLLLRRRR
+                     FFFFFFFF
+                 mapping:
+                     L: left_col
+                     R: right_col
+                     F: footer
+        headercontentfooter:
+            path: 'CCDITVBundle::Header-Content-Footer.html.twig'
+            name: 'Cabeçalho + Conteúdo + Rodapé'
+            containers:
+                 header:
+                     name: Cabeçalho
+                 content:
+                     name: Conteúdo
+                 footer:
+                     name: Rodapé
+            matrix:
+                 layout: |
+                     HHHHHHHH
+                     CCCCCCCC
+                     FFFFFFFF
+                 mapping:
+                     H: header
+                     C: content
                      F: footer
 
     page_defaults:
@@ -125,8 +168,7 @@ sonata_page:
     catch_exceptions:
         not_found: [404]    # render 404 page with "not_found" key (name generated: _page_internal_error_{key})
         fatal:     [500]    # so you can use the same page for different http errors or specify specific page for each error
-
-
+    
 # Enable Doctrine to map the provided entities
 doctrine:
     orm:

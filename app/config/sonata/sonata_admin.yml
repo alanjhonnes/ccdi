@@ -74,7 +74,8 @@ sonata_admin:
             - assetic/sonata_admin_css.css
             - assetic/sonata_formatter_css.css
             - assetic/sonata_jqueryui_css.css
-            - bundles/sonatademo/css/demo.css
+            
+            - css/admin.css
 
 #            - bundles/sonataformatter/markitup/skins/sonata/style.css
 #            - bundles/sonataformatter/markitup/sets/markdown/style.css

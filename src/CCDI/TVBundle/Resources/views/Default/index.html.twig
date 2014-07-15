@@ -1,1 +1,36 @@
-Hello {{ name }}!
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta charset="UTF-8" />
+        <title>{% block title %}CCDI TV{% endblock %}</title>
+        {% block stylesheets %}
+            <link rel="stylesheet" href="{{ asset('css/main.css') }}"/>
+        {% endblock %}
+        <link rel="icon" type="image/x-icon" href="{{ asset('favicon.ico') }}" />
+        <script src="{{ asset('js/modernizr-2.6.2.min.js') }}"></script>
+    </head>
+    <body>
+        {% block body %}
+            <div class="pt-triggers">
+                <div id="next-button">next</div>
+                <div id="prev-button">prev</div>
+            </div>
+            <div id="page-container">
+            {% for page in pages %}
+                <section class="container-fluid">
+                    {% render page.url %}
+                </section>
+            {% endfor %}
+            </div>
+        {% endblock %}
+        {% block javascripts %}
+            <script src="{{ asset('js/jquery-1.11.1.min.js') }}"></script>
+            <script>
+                
+            </script>
+            <script src="{{ asset('js/main.js') }}"></script>
+            
+        {% endblock %}
+    </body>
+</html>

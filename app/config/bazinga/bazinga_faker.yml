@@ -1,6 +1,6 @@
 bazinga_faker:
     orm: doctrine
-    locale: en_GB
+    locale: pt_BR
     entities:
         Application\Sonata\OrderBundle\Entity\Order:
             number: 50
@@ -29,7 +29,7 @@ bazinga_faker:
                 billingCountryCode:
                     method: randomElement
                     parameters:
-                        - [ 'EN', 'FR' ]
+                        - [ 'BR' ]
                 billingName:
                     method: word
                 billingPhone:
@@ -54,7 +54,7 @@ bazinga_faker:
                 shippingCountryCode:
                     method: randomElement
                     parameters:
-                        - [ 'EN', 'FR' ]
+                        - [ 'BR' ]
                 shippingName:
                     method: word
                 shippingPhone:

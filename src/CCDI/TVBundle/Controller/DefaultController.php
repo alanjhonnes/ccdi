@@ -9,11 +9,29 @@ use Sensio\Bundle\FrameworkExtraBundle\Configuration\Template;
 class DefaultController extends Controller
 {
     /**
-     * @Route("/hello/{name}")
+     * @Route("/tv/")
      * @Template()
      */
-    public function indexAction($name)
+    public function indexAction()
     {
-        return array('name' => $name);
+        $pages = array();
+        
+        $pages = $this->getDoctrine()->getRepository("ApplicationSonataPageBundle:Page")->findBy(array('enabled' => true));
+        
+        //$this->renderView($view);
+        return array('pages' => $pages);
+    }
+    
+    /**
+     * @Route("/tv/office")
+     * @Template()
+     */
+    public function officeAction()
+    {
+        $pages = array();
+        $this->renderView($view);
+        
+        
+        return array('pages' => $pages);
     }
 }

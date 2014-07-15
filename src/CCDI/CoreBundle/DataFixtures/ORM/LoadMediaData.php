@@ -38,16 +38,6 @@ class LoadMediaData extends AbstractFixture implements ContainerAwareInterface, 
     public function load(ObjectManager $manager)
     {
         $manager = $this->getMediaManager();
-        $logos = Finder::create()->name('*')->in(__DIR__.'/../data/logos');
-        foreach ($logos as $file) {
-            $media = $manager->create();
-            $media->setBinaryContent($file);
-            $media->setEnabled(true);
-            $filename = strtolower(substr($file->getFileName(), 0, -4));
-            $media->setName($filename);
-            $this->addReference($filename . '-logo', $media);
-            $manager->save($media, 'default', 'sonata.media.provider.image');
-        }
         
         $images = Finder::create()->name('*')->in(__DIR__.'/../data/images');
         foreach ($images as $file) {
