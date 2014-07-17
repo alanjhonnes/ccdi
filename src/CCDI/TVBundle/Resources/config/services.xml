@@ -4,17 +4,34 @@
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xsi:schemaLocation="http://symfony.com/schema/dic/services http://symfony.com/schema/dic/services/services-1.0.xsd">
 
-    <!--
+    
     <parameters>
-        <parameter key="ccditv.example.class">CCDI\TVBundle\Example</parameter>
+        <parameter key="ccdi.tv.block.service.posts.class">CCDI\TVBundle\Block\Service\PostsBlockService</parameter>
+        <parameter key="ccdi.tv.block.service.anniversary.class">CCDI\TVBundle\Block\Service\AnniversaryBlockService</parameter>
+        <parameter key="ccdi.tv.block.service.video.class">CCDI\TVBundle\Block\Service\VideoBlockService</parameter>
     </parameters>
-
+    
     <services>
-        <service id="ccditv.example" class="%ccditv.example.class%">
-            <argument type="service" id="service_id" />
-            <argument>plain_value</argument>
-            <argument>%parameter_name%</argument>
+        <service id="ccdi.tv.block.service.posts" class="%ccdi.tv.block.service.posts.class%">
+            <tag name="sonata.block" />
+            <argument>ccdi.tv.block.service.posts</argument>
+            <argument type="service" id="templating" />
+             
+        </service>
+        
+        <service id="ccdi.tv.block.service.anniversary" class="%ccdi.tv.block.service.anniversary.class%">
+            <tag name="sonata.block" />
+            <argument>ccdi.tv.block.service.anniversary</argument>
+            <argument type="service" id="templating" />
+             
+        </service>
+        
+        <service id="ccdi.tv.block.service.video" class="%ccdi.tv.block.service.video.class%">
+            <tag name="sonata.block" />
+            <argument>ccdi.tv.block.service.video</argument>
+            <argument type="service" id="templating" />
+             
         </service>
     </services>
-    -->
+    
 </container>

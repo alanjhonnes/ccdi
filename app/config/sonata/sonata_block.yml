@@ -9,6 +9,11 @@ sonata_block:
         "SonataDemoBundle:Builder:mainMenu": "Main Menu"
 
     blocks:
+        #ccdi
+        ccdi.tv.block.service.posts: 
+        ccdi.tv.block.service.anniversary: 
+        ccdi.tv.block.service.video: 
+        
         sonata.admin.block.admin_list:
             contexts:   [admin]
         sonata.admin.block.search_result:
@@ -24,16 +29,18 @@ sonata_block:
 
         # PageBundle's Blocks
         sonata.page.block.container:
+            contexts:   [admin]
             # cache: sonata.cache.memcached
             # cache: sonata.cache.predis
             # cache: sonata.page.cache.esi # if you are using the PageBundle
             # cache: sonata.block.cache.esi # if you are using the BlockBundle without the PageBundle
         sonata.page.block.children_pages:
+            contexts:   [admin]
 
         # MediaBundle's Blocks
         sonata.media.block.media:
         sonata.media.block.gallery:
-        sonata.media.block.feature_media:
+        #sonata.media.block.feature_media:
 
         # UserBundle's Blocks
         sonata.user.block.account:
@@ -42,6 +49,8 @@ sonata_block:
             contexts: [user]
         sonata.user.block.menu:
             contexts: [user]
-
+            
         # Formatter
-        sonata.formatter.block.formatter:
+        #sonata.formatter.block.formatter:
+            
+        

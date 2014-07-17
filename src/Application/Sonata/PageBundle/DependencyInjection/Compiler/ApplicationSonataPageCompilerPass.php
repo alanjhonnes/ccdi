@@ -17,5 +17,8 @@ class ApplicationSonataPageCompilerPass implements CompilerPassInterface
     {
         $definition = $container->getDefinition('sonata.page.admin.page');
         $definition->setClass('Application\Sonata\PageBundle\Admin\ApplicationPageAdmin');
+        
+        $definition = $container->getDefinition('sonata.page.admin.site');
+        $definition->setClass('Application\Sonata\PageBundle\Admin\ApplicationSiteAdmin');
     }
 }

@@ -667,6 +667,84 @@
           <source>header.compose_page</source>
           <target>Compor página</target>
       </trans-unit>
+      <trans-unit id="166" resname="form.label_theme">
+          <source>form.label_theme</source>
+          <target>Tema</target>
+      </trans-unit>
+      <trans-unit id="167" resname="list.label_theme">
+          <source>list.label_theme</source>
+          <target>Tema</target>
+      </trans-unit>
+      <trans-unit id="168" resname="add block of type">
+          <source>add block of type</source>
+          <target>Adicionar bloco de tipo:</target>
+      </trans-unit>
+      
+      <trans-unit id="169" resname="blocks">
+          <source>blocks</source>
+          <target>blocos</target>
+      </trans-unit>
+      
+      <trans-unit id="170" resname="confirm delete ?">
+          <source>confirm delete ?</source>
+          <target>Confirmar remoção?</target>
+      </trans-unit>
+      
+      <trans-unit id="171" resname="loading">
+          <source>loading</source>
+          <target>Carregando</target>
+      </trans-unit>
+      
+      <trans-unit id="172" resname="Content">
+          <source>Content</source>
+          <target>Conteúdo</target>
+      </trans-unit>
+      
+      <trans-unit id="173" resname="cancel">
+          <source>cancel</source>
+          <target>Cancelar</target>
+      </trans-unit>
+      
+      <trans-unit id="174" resname="sonata.page.block.container">
+          <source>sonata.page.block.container</source>
+          <target>Container</target>
+      </trans-unit>
+      
+      <trans-unit id="175" resname="Children Page (core)">
+          <source>Children Page (core)</source>
+          <target>Páginas filhas</target>
+      </trans-unit>
+      
+      <trans-unit id="176" resname="Media">
+          <source>Media</source>
+          <target>Media</target>
+      </trans-unit>
+      
+      <trans-unit id="177" resname="Gallery">
+          <source>Gallery</source>
+          <target>Galeria</target>
+      </trans-unit>
+      
+      <trans-unit id="178" resname="Text (core)">
+          <source>Text (core)</source>
+          <target>Texto</target>
+      </trans-unit>
+      
+      <trans-unit id="179" resname="compose page">
+          <source>compose page</source>
+          <target>Compor página</target>
+      </trans-unit>
+      
+      <trans-unit id="180" resname="Orphan containers">
+          <source>Orphan containers</source>
+          <target>Containers órfãos</target>
+      </trans-unit>
+      
+      <trans-unit id="181" resname="blocks">
+          <source>blocks</source>
+          <target>blocos</target>
+      </trans-unit>
+      
     </body>
   </file>
 </xliff>

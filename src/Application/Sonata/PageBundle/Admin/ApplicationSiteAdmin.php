@@ -9,7 +9,7 @@
  * file that was distributed with this source code.
  */
 
-namespace Sonata\PageBundle\Admin;
+namespace Application\Sonata\PageBundle\Admin;
 
 use Sonata\AdminBundle\Admin\Admin;
 use Sonata\AdminBundle\Route\RouteCollection;
@@ -20,32 +20,15 @@ use Sonata\AdminBundle\Datagrid\DatagridMapper;
 
 use Sonata\PageBundle\Route\RoutePageGenerator;
 
+use Sonata\PageBundle\Admin\SiteAdmin;
+
 /**
  * Admin definition for the Site class
  *
  * @author Thomas Rabaix <thomas.rabaix@sonata-project.org>
  */
-class SiteAdmin extends Admin
+class ApplicationSiteAdmin extends SiteAdmin
 {
-    /**
-     * @var RoutePageGenerator
-     */
-    protected $routePageGenerator;
-
-    /**
-     * Constructor
-     *
-     * @param string             $code               A Sonata admin code
-     * @param string             $class              A Sonata admin class name
-     * @param string             $baseControllerName A Sonata admin base controller name
-     * @param RoutePageGenerator $routePageGenerator Sonata route page generator service
-     */
-    public function __construct($code, $class, $baseControllerName, RoutePageGenerator $routePageGenerator)
-    {
-        $this->routePageGenerator = $routePageGenerator;
-
-        parent::__construct($code, $class, $baseControllerName);
-    }
 
     /**
      * {@inheritdoc}
@@ -110,14 +93,8 @@ class SiteAdmin extends Admin
                     'required' => false
                 ))
                 ->add('relativePath', null, array('required' => false))
-                ->add('enabledFrom', 'sonata_type_datetime_picker', array('dp_side_by_side' => true))
-                ->add('enabledTo', 'sonata_type_datetime_picker', array('dp_side_by_side' => true))
             ->end()
-            ->with($this->trans('form_site.label_seo'))
-                ->add('title', null, array('required' => false))
-                ->add('metaDescription', 'textarea', array('required' => false))
-                ->add('metaKeywords', 'textarea', array('required' => false))
-            ->end()
+           
         ;
     }
 

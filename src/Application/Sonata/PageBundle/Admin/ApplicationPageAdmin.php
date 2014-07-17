@@ -80,12 +80,14 @@ class ApplicationPageAdmin extends PageAdmin
         $listMapper
             ->add('hybrid', 'text', array('template' => 'SonataPageBundle:PageAdmin:field_hybrid.html.twig'))
             ->addIdentifier('name')
-            ->add('type')
-            ->add('pageAlias')
+//            ->add('type')
+//            ->add('pageAlias')
+            ->add('theme')
+            ->add('url')
             ->add('site')
-            ->add('decorate', null, array('editable' => true))
-            ->add('enabled', null, array('editable' => true))
-            ->add('edited', null, array('editable' => true))
+            ->add('decorate', null, array('editable' => false))
+            ->add('enabled', null, array('editable' => false))
+            ->add('edited', null, array('editable' => false))
         ;
     }
 
@@ -150,17 +152,18 @@ class ApplicationPageAdmin extends PageAdmin
         $formMapper
             ->with($this->trans('form_page.group_main_label'))
                 ->add('name')
+                ->add('theme', 'choice', array('required' => true, 'choices' => array('theme-1' => 'Tema padrão', 'theme-2' => 'Tema 2', 'theme-3' => 'Tema 3')))
                 ->add('enabled', null, array('required' => false))
                 ->add('position')
             ->end();
 
-        if ($this->hasSubject() && !$this->getSubject()->isInternal()) {
-            $formMapper
-                ->with($this->trans('form_page.group_main_label'))
-                    ->add('type', 'sonata_page_type_choice', array('required' => false))
-                ->end()
-            ;
-        }
+//        if ($this->hasSubject() && !$this->getSubject()->isInternal()) {
+//            $formMapper
+//                ->with($this->trans('form_page.group_main_label'))
+//                    ->add('type', 'sonata_page_type_choice', array('required' => false))
+//                ->end()
+//            ;
+//        }
 
         $formMapper
             ->with($this->trans('form_page.group_main_label'))
@@ -187,43 +190,25 @@ class ApplicationPageAdmin extends PageAdmin
             ;
         }
 
-        if (!$this->getSubject() || !$this->getSubject()->isDynamic()) {
-            $formMapper
-                ->with($this->trans('form_page.group_main_label'))
-                    ->add('pageAlias', null, array('required' => false))
-                    ->add('target', 'sonata_page_selector', array(
-                        'page'          => $this->getSubject() ?: null,
-                        'site'          => $this->getSubject() ? $this->getSubject()->getSite() : null,
-                        'model_manager' => $this->getModelManager(),
-                        'class'         => $this->getClass(),
-                        'filter_choice' => array('request_method' => 'all'),
-                        'required'      => false
-                    ), array(
-                        'link_parameters' => array(
-                            'siteId' => $this->getSubject() ? $this->getSubject()->getSite()->getId() : null
-                        )
-                    ))
-                ->end()
-            ;
-        }
-
-//        if (!$this->getSubject() || !$this->getSubject()->isHybrid()) {
+//        if (!$this->getSubject() || !$this->getSubject()->isDynamic()) {
 //            $formMapper
-//                ->with($this->trans('form_page.group_seo_label'))
-//                    ->add('slug', 'text',  array('required' => false))
-//                    ->add('customUrl', 'text', array('required' => false))
+//                ->with($this->trans('form_page.group_main_label'))
+//                    ->add('pageAlias', null, array('required' => false))
+//                    ->add('target', 'sonata_page_selector', array(
+//                        'page'          => $this->getSubject() ?: null,
+//                        'site'          => $this->getSubject() ? $this->getSubject()->getSite() : null,
+//                        'model_manager' => $this->getModelManager(),
+//                        'class'         => $this->getClass(),
+//                        'filter_choice' => array('request_method' => 'all'),
+//                        'required'      => false
+//                    ), array(
+//                        'link_parameters' => array(
+//                            'siteId' => $this->getSubject() ? $this->getSubject()->getSite()->getId() : null
+//                        )
+//                    ))
 //                ->end()
 //            ;
 //        }
-
-
-//        $formMapper
-//            ->with($this->trans('form_page.group_advanced_label'), array('collapsed' => true))
-//                ->add('javascript', null,  array('required' => false))
-//                ->add('stylesheet', null, array('required' => false))
-//                ->add('rawHeaders', null, array('required' => false))
-//            ->end()
-//        ;
 
         $formMapper->setHelps(array(
             'name' => $this->trans('help_page_name')
