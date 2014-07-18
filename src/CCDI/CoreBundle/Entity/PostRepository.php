@@ -3,6 +3,7 @@
 namespace CCDI\CoreBundle\Entity;
 
 use Doctrine\ORM\EntityRepository;
+use Doctrine\DBAL\Query\QueryBuilder;
 
 /**
  * PostRepository
@@ -12,4 +13,38 @@ use Doctrine\ORM\EntityRepository;
  */
 class PostRepository extends EntityRepository
 {
+
+
+    /**
+     * 
+     * @param integer $maxPosts
+     * @return QueryBuilder
+     */
+    public function findRecentPosts($maxPosts){
+        return $this->getEntityManager()->createQueryBuilder()
+                ->select('p')
+                ->from('CCDICoreBundle:Post', 'p')
+                ->setMaxResults($maxPosts)
+                ->orderBy('p.id', 'DESC');
+    }
+    
+    public function getRecentPosts($maxPosts){
+        return $this->findRecentPosts($maxPosts)->getQuery()->execute();
+    }
+    
+    /**
+     * 
+     * @param integer $maxPosts
+     * @return QueryBuilder
+     */
+    public function findGenericPosts($maxPosts){
+        return $this->findRecentPosts($maxPosts)
+                ->andWhere('p.officeOnly = false');
+    }
+    
+    public function getGenericPosts($maxPosts){
+        return $this->findGenericPosts($maxPosts)
+            ->getQuery()->execute();
+    }
+            
 }

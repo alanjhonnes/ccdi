@@ -9,9 +9,11 @@
         <parameter key="ccdi_core.example.class">CCDI\CoreBundle\Example</parameter>
     </parameters>
 
+
+
     <services>
-        <service id="ccdi_core.example" class="%ccdi_core.example.class%">
-            <argument type="service" id="service_id" />
+        <service id="ccdi.core.entity.post.repository" class="CCDI\CoreBundle\Entity\PostRepository">
+            <argument type="service" id="doctrine.orm.entity_manager" />
             <argument>plain_value</argument>
             <argument>%parameter_name%</argument>
         </service>

@@ -16,7 +16,7 @@
             <tag name="sonata.block" />
             <argument>ccdi.tv.block.service.posts</argument>
             <argument type="service" id="templating" />
-             
+            <argument type="service" id="doctrine.orm.entity_manager" />
         </service>
         
         <service id="ccdi.tv.block.service.anniversary" class="%ccdi.tv.block.service.anniversary.class%">
