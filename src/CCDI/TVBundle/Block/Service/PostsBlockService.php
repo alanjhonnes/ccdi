@@ -101,7 +101,7 @@ class PostsBlockService extends BaseBlockService
     public function setDefaultSettings(OptionsResolverInterface $resolver)
     {
         $resolver->setDefaults(array(
-            'numPosts'  => '10',
+            'numPosts'  => '5',
             'template' => 'CCDITVBundle:Block:posts.html.twig'
         ));
     }

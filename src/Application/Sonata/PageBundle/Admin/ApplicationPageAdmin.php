@@ -80,7 +80,7 @@ class ApplicationPageAdmin extends PageAdmin
         $listMapper
             ->add('hybrid', 'text', array('template' => 'SonataPageBundle:PageAdmin:field_hybrid.html.twig'))
             ->addIdentifier('name')
-//            ->add('type')
+            ->add('type')
 //            ->add('pageAlias')
             ->add('theme')
             ->add('url')
@@ -157,13 +157,13 @@ class ApplicationPageAdmin extends PageAdmin
                 ->add('position')
             ->end();
 
-//        if ($this->hasSubject() && !$this->getSubject()->isInternal()) {
-//            $formMapper
-//                ->with($this->trans('form_page.group_main_label'))
-//                    ->add('type', 'sonata_page_type_choice', array('required' => false))
-//                ->end()
-//            ;
-//        }
+        if ($this->hasSubject() && !$this->getSubject()->isInternal()) {
+            $formMapper
+                ->with($this->trans('form_page.group_main_label'))
+                    ->add('type', 'sonata_page_type_choice', array('required' => true))
+                ->end()
+            ;
+        }
 
         $formMapper
             ->with($this->trans('form_page.group_main_label'))

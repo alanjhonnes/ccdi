@@ -19,8 +19,9 @@
             </div>
             <div id="page-container">
             {% for page in pages %}
-                <section class="container-fluid {{ page.theme }}" data-name="{{page.name}}">
-                    {% render page.url %}
+                <section class="container-fluid {{ page.theme }}" data-name="{{page.name}}" data-url="{{ page.url ~
+                '?office=' ~ 1  }}">
+                    {% render page.url ~ '?office=' ~ 1 %}
                 </section>
             {% endfor %}
             </div>

@@ -27,6 +27,15 @@ use Symfony\Component\OptionsResolver\OptionsResolverInterface;
  */
 class VideoBlockService extends BaseBlockService
 {
+
+
+
+    public function __construct($name, EngineInterface $templating, EntityManager $em) {
+        parent::__construct($name, $templating);
+
+    }
+
+
     /**
      * {@inheritdoc}
      */

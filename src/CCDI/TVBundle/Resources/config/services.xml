@@ -9,6 +9,7 @@
         <parameter key="ccdi.tv.block.service.posts.class">CCDI\TVBundle\Block\Service\PostsBlockService</parameter>
         <parameter key="ccdi.tv.block.service.anniversary.class">CCDI\TVBundle\Block\Service\AnniversaryBlockService</parameter>
         <parameter key="ccdi.tv.block.service.video.class">CCDI\TVBundle\Block\Service\VideoBlockService</parameter>
+        <parameter key="ccdi.tv.page.service.ccdipage.class">CCDI\TVBundle\Page\Service\CCDIPageService</parameter>
     </parameters>
     
     <services>
@@ -23,6 +24,7 @@
             <tag name="sonata.block" />
             <argument>ccdi.tv.block.service.anniversary</argument>
             <argument type="service" id="templating" />
+            <argument type="service" id="doctrine.orm.entity_manager" />
              
         </service>
         
@@ -30,8 +32,16 @@
             <tag name="sonata.block" />
             <argument>ccdi.tv.block.service.video</argument>
             <argument type="service" id="templating" />
-             
+            <argument type="service" id="doctrine.orm.entity_manager" />
         </service>
+
+        <service id="ccdi.tv.page.service.ccdipage" class="%ccdi.tv.page.service.ccdipage.class%">
+            <tag name="sonata.page"/>
+            <argument>CCDI</argument>
+            <argument type="service" id="sonata.page.template_manager" />
+        </service>
+
+
     </services>
     
 </container>

@@ -12,4 +12,17 @@ use Doctrine\ORM\EntityRepository;
  */
 class EmployeeRepository extends EntityRepository
 {
+
+    public function findByBirthday(\DateTime $day) {
+        return $this->getEntityManager()->createQueryBuilder()
+            ->select('e')
+            ->from('CCDICoreBundle:Employee', 'e')
+            ->where('e.birthday = ' . $day->format('Y-m-d'))
+            ->orderBy('e.name', 'DESC');
+    }
+
+    public function getByBirthday(\DateTime $day) {
+        return $this->findByBirthday($day)->getQuery()->execute();
+    }
+
 }

@@ -14,12 +14,11 @@ class DefaultController extends Controller
      */
     public function indexAction()
     {
-        $pages = array();
         
         $pages = $this->getDoctrine()->getRepository("ApplicationSonataPageBundle:Page")->findBy(array('enabled' => true));
         
         //$this->renderView($view);
-        return array('pages' => $pages);
+        return array('pages' => $pages, 'officeOnly' => false);
     }
     
     /**
@@ -28,10 +27,9 @@ class DefaultController extends Controller
      */
     public function officeAction()
     {
-        $pages = array();
-        $this->renderView($view);
+        $pages = $this->getDoctrine()->getRepository("ApplicationSonataPageBundle:Page")->findBy(array('enabled' => true));
         
         
-        return array('pages' => $pages);
+        return array('pages' => $pages, 'officeOnly' => true);
     }
 }
