@@ -2,17 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b3cf15e-f922-4f90-9d7e-093b0f10022e" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/CCDI/TVBundle/Page/Service/CCDIPageService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CCDI/TVBundle/Block/Service/AnniversaryBlockService.php" afterPath="$PROJECT_DIR$/src/CCDI/TVBundle/Block/Service/AnniversaryBlockService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/Application/Sonata/PageBundle/Admin/ApplicationPageAdmin.php" afterPath="$PROJECT_DIR$/src/Application/Sonata/PageBundle/Admin/ApplicationPageAdmin.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CCDI/TVBundle/Controller/DefaultController.php" afterPath="$PROJECT_DIR$/src/CCDI/TVBundle/Controller/DefaultController.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CCDI/CoreBundle/Entity/EmployeeRepository.php" afterPath="$PROJECT_DIR$/src/CCDI/CoreBundle/Entity/EmployeeRepository.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CCDI/TVBundle/Block/Service/PostsBlockService.php" afterPath="$PROJECT_DIR$/src/CCDI/TVBundle/Block/Service/PostsBlockService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CCDI/TVBundle/Block/Service/VideoBlockService.php" afterPath="$PROJECT_DIR$/src/CCDI/TVBundle/Block/Service/VideoBlockService.php" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/Block/anniversary.html.twig" afterPath="$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/Block/anniversary.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/Default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/Block/posts.html.twig" afterPath="$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/Block/posts.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CCDI/TVBundle/Resources/config/services.xml" afterPath="$PROJECT_DIR$/src/CCDI/TVBundle/Resources/config/services.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ccdi-page.iws" />
@@ -86,7 +75,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/web/js/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="1" column="37" selection-start="67" selection-end="67" vertical-scroll-proportion="-0.663837" vertical-offset="408" max-vertical-offset="2720">
+            <state line="40" column="26" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.7157895" vertical-offset="408" max-vertical-offset="2720">
               <folding />
             </state>
           </provider>
@@ -626,12 +615,18 @@
       <created>1405623458241</created>
       <updated>1405623458241</updated>
     </task>
+    <task id="LOCAL-00001" summary="page service">
+      <created>1405984139654</created>
+      <updated>1405984139654</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -642,7 +637,7 @@
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2693997" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.32861635" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.5707547" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -667,6 +662,8 @@
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
+    <MESSAGE value="page service" />
+    <option name="LAST_COMMIT_MESSAGE" value="page service" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -1032,7 +1029,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="1" column="37" selection-start="67" selection-end="67" vertical-scroll-proportion="-0.663837" vertical-offset="408" max-vertical-offset="2720">
+        <state line="40" column="26" selection-start="1305" selection-end="1305" vertical-scroll-proportion="0.7157895" vertical-offset="408" max-vertical-offset="2720">
           <folding />
         </state>
       </provider>
