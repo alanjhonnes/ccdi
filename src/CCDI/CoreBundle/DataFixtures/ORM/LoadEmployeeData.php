@@ -39,7 +39,7 @@ class LoadEmployeeData extends AbstractFixture implements ContainerAwareInterfac
     {
         $faker = $this->getFaker();
         
-        for ($index = 0; $index < 100; $index++) {
+        for ($index = 0; $index < 1500; $index++) {
             $employee = new Employee();
             $employee->setName($faker->firstName . ' ' . $faker->lastName);
             $employee->setBirthday($faker->dateTimeThisCentury);

@@ -4,14 +4,16 @@
     <div class="block-posts">
     {% if posts|length > 0 %}
         <h2>{{ block.name }}</h2>
-        <ul>
-        {% for post in posts %}
-            <li>
-                <h3>{{ post.title }}</h3>
-                <p>{{ post.content|raw }}</p>
-            </li>
-        {% endfor %}
-        </ul>
+        <div class="posts">
+            <ul>
+            {% for post in posts %}
+                <li>
+                    <h3>{{ post.title }}</h3>
+                    <p>{{ post.content|raw }}</p>
+                </li>
+            {% endfor %}
+            </ul>
+        </div>
     {% else %}
         <h2>Não há notícias ainda.</h2>
     {% endif %}

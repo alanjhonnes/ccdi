@@ -12,7 +12,8 @@ sonata_block:
         #ccdi
         ccdi.tv.block.service.posts: 
         ccdi.tv.block.service.anniversary: 
-        ccdi.tv.block.service.video: 
+        ccdi.tv.block.service.video:
+        ccdi.tv.block.service.media:
         
         sonata.admin.block.admin_list:
             contexts:   [admin]
@@ -38,7 +39,7 @@ sonata_block:
             contexts:   [admin]
 
         # MediaBundle's Blocks
-        sonata.media.block.media:
+        #sonata.media.block.media:
         sonata.media.block.gallery:
         #sonata.media.block.feature_media:
 

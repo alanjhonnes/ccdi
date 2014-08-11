@@ -21,6 +21,9 @@ use Sonata\BlockBundle\Model\BlockInterface;
 use Sonata\BlockBundle\Block\BaseBlockService;
 use Symfony\Component\OptionsResolver\OptionsResolverInterface;
 
+use Symfony\Component\Templating\EngineInterface;
+use Doctrine\ORM\EntityManager;
+
 /**
  *
  * @author     Alan Jhonnes <aj@alanjhonnes.com>

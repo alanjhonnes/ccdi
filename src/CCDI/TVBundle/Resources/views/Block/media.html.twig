@@ -1,0 +1,12 @@
+{% extends sonata_block.templates.block_base %}
+
+{% block block %}
+    <div class="media-container" style="background-image: url('{% path media,
+    settings.format %}');">
+        {% if media and settings.format%}
+            {#% media media, settings.format %#}
+        {% else %}
+            {# no media selected or format defined... #}
+        {% endif %}
+    </div>
+{% endblock %}

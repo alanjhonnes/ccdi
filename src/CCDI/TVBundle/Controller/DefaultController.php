@@ -15,7 +15,7 @@ class DefaultController extends Controller
     public function indexAction()
     {
         
-        $pages = $this->getDoctrine()->getRepository("ApplicationSonataPageBundle:Page")->findBy(array('enabled' => true));
+        $pages = $this->getDoctrine()->getRepository("ApplicationSonataPageBundle:Page")->findAllPublicPages();
         
         //$this->renderView($view);
         return array('pages' => $pages, 'officeOnly' => false);
@@ -28,8 +28,11 @@ class DefaultController extends Controller
     public function officeAction()
     {
         $pages = $this->getDoctrine()->getRepository("ApplicationSonataPageBundle:Page")->findBy(array('enabled' => true));
-        
-        
+
+
         return array('pages' => $pages, 'officeOnly' => true);
+
+
+
     }
 }

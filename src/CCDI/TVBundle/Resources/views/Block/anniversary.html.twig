@@ -2,17 +2,19 @@
 
 {% block block %}
     <div class="anniversary-block">
-    {% if employees|length > 0 %}
-        <h2>Aniversariantes de {{"now"|date('d/m')}}:</h2>
-        <ul>
-            {% for employee in employees %}
-                <li>
-                    <h3>{{ employee.name }}</h3>
-                </li>
-            {% endfor %}
-        </ul>
-    {% else %}
-        <h2>Não há aniversariantes em {{"now"|date('d/m')}}</h2>
-    {% endif %}
+        {% if employees|length > 0 %}
+            <h2>Aniversariantes de {{ "now"|date('d/m') }}:</h2>
+            <div class="anniversary">
+                <ul>
+                    {% for employee in employees %}
+                        <li>
+                            <h3>{{ employee.name }}</h3>
+                        </li>
+                    {% endfor %}
+                </ul>
+            </div>
+        {% else %}
+            <h2>Não há aniversariantes em {{ "now"|date('d/m') }}</h2>
+        {% endif %}
     </div>
 {% endblock %}

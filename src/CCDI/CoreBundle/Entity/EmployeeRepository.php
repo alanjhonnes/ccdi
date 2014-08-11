@@ -13,16 +13,22 @@ use Doctrine\ORM\EntityRepository;
 class EmployeeRepository extends EntityRepository
 {
 
-    public function findByBirthday(\DateTime $day) {
+    public function findByAnniversary(\DateTime $day) {
+
+        $emConfig = $this->getEntityManager()->getConfiguration();
+        $emConfig->addCustomDatetimeFunction('MONTH', 'CCDI\CoreBundle\Doctrine\Extensions\Month');
+        $emConfig->addCustomDatetimeFunction('DAY', 'CCDI\CoreBundle\Doctrine\Extensions\Day');
+
         return $this->getEntityManager()->createQueryBuilder()
             ->select('e')
             ->from('CCDICoreBundle:Employee', 'e')
-            ->where('e.birthday = ' . $day->format('Y-m-d'))
+            ->where('MONTH(e.birthday) = ' . $day->format('m'))
+            ->andWhere('DAY(e.birthday) = ' . $day->format('d'))
             ->orderBy('e.name', 'DESC');
     }
 
-    public function getByBirthday(\DateTime $day) {
-        return $this->findByBirthday($day)->getQuery()->execute();
+    public function getByAnniversary(\DateTime $day) {
+        return $this->findByAnniversary($day)->getQuery()->execute();
     }
 
 }

@@ -142,13 +142,26 @@ $(document).ready(function(){
     }
     
     var $window = $(window);
-    var $pageContainer = $("#pt-main");
+    var $pageContainer = $("#page-container");
+    var $footer = $("#footer");
+    var footerHeight = $footer.height();
     $window.resize(function() {
         var width = $window.width();
         var height = $window.height();
         console.log('W: ' + width + ' H: ' + height);
-        var pageWidth = width - 150;
-        $pageContainer.css("width", pageWidth + "px" );
-        
+        var pageHeight = height - footerHeight;
+        $(".height-33").css("height", Math.round(pageHeight / 3) + "px");
+        $(".height-50").css("height", Math.round(pageHeight / 2) + "px");
+        $(".height-100").css("height", pageHeight + "px");
     }).resize();
+
+    $('.posts').vTicker('init', {speed: 400,
+        pause: 4000,
+        showItems: 1,
+        padding:4});
+
+    $('.anniversaries').vTicker('init', {speed: 400,
+        pause: 4000,
+        showItems: 2,
+        padding:4});
 });

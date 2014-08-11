@@ -49,7 +49,7 @@ class EmployeeAdmin extends Admin
         $formMapper
             ->add('id')
             ->add('name')
-            ->add('birthday')
+            ->add('birthday', 'date')
         ;
     }
 

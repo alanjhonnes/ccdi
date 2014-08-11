@@ -46,6 +46,8 @@ sonata_admin:
                 label_catalogue: SonataMediaBundle
                 icon:            '<i class="fa fa-th"></i>'
                 items:
+                    - ccdi.admin.post
+                    - ccdi.admin.employee
                     - sonata.media.admin.media
                     - sonata.media.admin.gallery
                     

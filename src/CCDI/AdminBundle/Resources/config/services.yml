@@ -3,10 +3,10 @@ services:
         class: CCDI\AdminBundle\Admin\PostAdmin
         arguments: [~, CCDI\CoreBundle\Entity\Post, CCDIAdminBundle:PostAdmin]
         tags:
-            - {name: sonata.admin, manager_type: orm, group: admin, label: Post}
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Notícia}
 
     ccdi.admin.employee:
         class: CCDI\AdminBundle\Admin\EmployeeAdmin
         arguments: [~, CCDI\CoreBundle\Entity\Employee, CCDIAdminBundle:EmployeeAdmin]
         tags:
-            - {name: sonata.admin, manager_type: orm, group: admin, label: Employee}
+            - {name: sonata.admin, manager_type: orm, group: admin, label: Funcionário}

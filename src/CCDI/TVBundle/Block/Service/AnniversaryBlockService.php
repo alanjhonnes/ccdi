@@ -51,7 +51,7 @@ class AnniversaryBlockService extends BaseBlockService
     {
 
         //Get all employees that have their anniversary today
-        $employees = $this->employeeRepository->getByBirthday(new \DateTime());
+        $employees = $this->employeeRepository->getByAnniversary(new \DateTime());
 
 
         return $this->renderResponse($blockContext->getTemplate(), array(
