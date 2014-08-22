@@ -38,7 +38,7 @@ class Post {
     private $content;
     
     /**
-     * @ORM\Column(type="datetime", length=255)
+     * @ORM\Column(type="datetime")
      */
     private $datetime;
     

@@ -61,7 +61,7 @@ class CCDIMediaBlockService extends MediaBlockService
             'media'    => false,
             'context'  => false,
             'mediaId'  => null,
-            'format'   => false,
+            'format'   => 'default_big',
             'template' => 'CCDITVBundle:Block:media.html.twig'
         ));
     }
@@ -80,7 +80,8 @@ class CCDIMediaBlockService extends MediaBlockService
         $formMapper->add('settings', 'sonata_type_immutable_array', array(
             'keys' => array(
                 array($this->getMediaBuilder($formMapper), null, array()),
-                array('format', 'choice', array('required' => count($formatChoices) > 0, 'choices' => $formatChoices)),
+                //array('format', 'choice', array('required' => count($formatChoices) > 0,
+                //    'choices' => $formatChoices)),
             )
         ));
     }

@@ -200,7 +200,7 @@ section h1 strong {
   width: 300px;
   z-index: 999999;
   margin-top: 130px;
-  top: 12%;
+  bottom: 10%;
   left: 50%;
   -webkit-transform: translateX(-50%);
   -moz-transform: translateX(-50%);
@@ -356,4 +356,29 @@ section h1 strong {
   background-size: contain;
   background-position: center;
   height: 100%;
+}
+footer {
+  height: 75px;
+  padding: 16px;
+  font-size: 32px;
+  color: #ffffff;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  display: block;
+  background-color: #151515;
+  font-weight: bold;
+  font-family: "open_sansbold", Arial, Helvetica, sans-serif;
+}
+.blue-icon {
+  color: #0044cc;
+}
+.red-icon {
+  color: #FF0000;
+}
+.weather {
+  text-align: right;
+}
+.timer {
+  text-align: left;
 }

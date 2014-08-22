@@ -1,3 +1,41 @@
+.block-posts h2 {
+  padding-left: 6px;
+}
 .theme-1 {
   color: #ffffff;
+}
+.theme-1 .block-posts h2 {
+  border-left-color: #fff;
+  border-left-style: solid;
+  border-left-width: 4px;
+}
+.theme-1 .block-posts h3 {
+  text-decoration: underline;
+}
+.theme-1 .block-posts p {
+  border-left-color: #fff;
+  border-left-style: solid;
+  border-left-width: 1px;
+  padding-left: 6px;
+}
+.theme-2 {
+  color: #FF0000;
+  background-color: #c0c0c0;
+}
+.theme-2 .block-posts {
+  background-color: #fff;
+}
+.theme-2 .block-posts h2 {
+  border-left-color: #fff;
+  border-left-style: solid;
+  border-left-width: 4px;
+}
+.theme-2 .block-posts h3 {
+  text-decoration: underline;
+}
+.theme-2 .block-posts p {
+  border-left-color: #fff;
+  border-left-style: solid;
+  border-left-width: 1px;
+  padding-left: 6px;
 }

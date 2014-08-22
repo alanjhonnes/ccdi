@@ -8,7 +8,7 @@
             <ul>
             {% for post in posts %}
                 <li>
-                    <h3>{{ post.title }}</h3>
+                    <h3>{{ post.datetime|date('d/m')  }} - {{ post.title }}</h3>
                     <p>{{ post.content|raw }}</p>
                 </li>
             {% endfor %}

@@ -53,7 +53,7 @@ sonata_admin:
                     
 
             sonata.admin.group.site_builder:
-                label:           Site Builder
+                label:           Edição de Páginas
                 label_catalogue: SonataPageBundle
                 icon:            '<i class="fa fa-puzzle-piece"></i>'
                 items:
@@ -61,7 +61,7 @@ sonata_admin:
                     - sonata.page.admin.site
 
             sonata.admin.group.administration:
-                label:           sonata_administration
+                label:           Gerencia de usuários
                 label_catalogue: SonataAdminBundle
                 icon:            '<i class="fa fa-cogs"></i>'
                 items:
