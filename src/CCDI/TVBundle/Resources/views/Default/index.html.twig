@@ -45,10 +45,20 @@
         {% endblock %}
         {% block javascripts %}
             <script src="{{ asset('js/jquery-1.11.1.min.js') }}"></script>
-            <script src="{{ asset('js/vticker.jquery.js') }}"></script>
-            <script>
-                
-            </script>
+            <script src="{{ asset('bower_components/angular/angular.js') }}"></script>
+            <script src="{{ asset('bower_components/angular-route/angular-route.js') }}"></script>
+            <script src="{{ asset('bower_components/angular-animate/angular-animate.js') }}"></script>
+            <script src="{{ asset('js/app.js') }}"></script>
+            <script src="{{ asset('js/services.js') }}"></script>
+            <script src="{{ asset('js/controllers.js') }}"></script>
+            <script src="{{ asset('js/filters.js') }}"></script>
+            <script src="{{ asset('js/directives.js') }}"></script>
+
+
+            <script src="{{ asset('js/filters.js') }}"></script>
+            <script src="{{ asset('js/directives.js') }}"></script>
+            <script src="{{ asset('js/controllers.js') }}"></script>
+            <script src="{{ asset('js/app.js') }}"></script>
             <script src="{{ asset('js/main.js') }}"></script>
             
         {% endblock %}
