@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html ng-app="ccdiTv" >
     <head>
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta charset="UTF-8" />
@@ -18,28 +18,26 @@
                 <div id="next-button">next</div>
                 <div id="prev-button">prev</div>
             </div>
-            <div id="page-container">
+            <page-container id="page-container">
             {% for page in pages %}
-                <section class="container-fluid {{ page.theme }}" data-name="{{page.name}}" data-url="{{ page.url ~
+                <page class="container-fluid page {{ page.theme }}" data-name="{{page.name}}" data-url="{{ page
+                .url ~
                 '?office=' ~ 1  }}">
                     {% render page.url ~ '?office=' ~ 1 %}
-                </section>
+                </page>
             {% endfor %}
-            </div>
+            </page-container>
             <footer id="footer">
-                <div class="container-fluid">
-                    <div class="row">
-                        <div class="col-md-5 col-md-offset-1 weather">
-                            <span class="blue-icon glyphicon glyphicon-tint"></span> 27%
+                <div class="weather">
+                    <span class="blue-icon glyphicon glyphicon-tint"></span> 27%
 
-                            <span class="blue-icon glyphicon glyphicon-arrow-down"></span> 15º
+                    <span class="blue-icon glyphicon glyphicon-arrow-down"></span> 15º
 
-                            <span class="red-icon glyphicon glyphicon-arrow-up"></span> 20º
-                        </div>
-                        <div class="col-md-5 timer">
-                            <span class="glyphicon glyphicon-time"></span> 15:03
-                        </div>
-                    </div>
+                    <span class="red-icon glyphicon glyphicon-arrow-up"></span> 20º
+                </div>
+                <div class="footer-divisor"></div>
+                <div class="timer">
+                    <span class="glyphicon glyphicon-time"></span> 15:03
                 </div>
             </footer>
         {% endblock %}

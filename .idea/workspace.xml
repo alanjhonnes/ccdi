@@ -2,12 +2,12 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="7b3cf15e-f922-4f90-9d7e-093b0f10022e" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/app.js" afterPath="$PROJECT_DIR$/web/js/app.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/Fullscreen.html.twig" afterPath="$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/Fullscreen.html.twig" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/controllers.js" afterPath="$PROJECT_DIR$/web/js/controllers.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/directives.js" afterPath="$PROJECT_DIR$/web/js/directives.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/filters.js" afterPath="$PROJECT_DIR$/web/js/filters.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/Default/index.html.twig" afterPath="$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/Default/index.html.twig" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/js/services.js" afterPath="$PROJECT_DIR$/web/js/services.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/css/main.css" afterPath="$PROJECT_DIR$/web/css/main.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/web/less/main.less" afterPath="$PROJECT_DIR$/web/less/main.less" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="ccdi-page.iws" />
@@ -34,7 +34,34 @@
       <file leaf-file-name="index.html.twig" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/Default/index.html.twig">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="49" column="86" selection-start="2324" selection-end="2324" vertical-scroll-proportion="0.4509284" vertical-offset="663" max-vertical-offset="1224">
+            <state line="20" column="48" selection-start="896" selection-end="896" vertical-scroll-proportion="0.09018568" vertical-offset="306" max-vertical-offset="1190">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="Fullscreen.html.twig" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/Fullscreen.html.twig">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="3" column="58" selection-start="180" selection-end="180" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="221">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="main.less" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/less/main.less">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="474" column="15" selection-start="10533" selection-end="10533" vertical-scroll-proportion="-3.4807692" vertical-offset="7877" max-vertical-offset="8296">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="directives.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/web/js/directives.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="15" column="28" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0" vertical-offset="255" max-vertical-offset="765">
               <folding />
             </state>
           </provider>
@@ -43,41 +70,8 @@
       <file leaf-file-name="app.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/app.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="9" column="9" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-              <folding>
-                <marker date="1408738878436" expanded="true" signature="108:211" placeholder="[...]" />
-                <marker date="1408738878436" expanded="true" signature="214:521" placeholder="/*...*/" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="filters.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/filters.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="22" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
-              <folding>
-                <marker date="1408738885748" expanded="true" signature="15:28" placeholder="/*...*/" />
-                <marker date="1408738885748" expanded="true" signature="92:224" placeholder="[...]" />
-                <marker date="1408738885748" expanded="true" signature="122:223" placeholder="{...}" />
-                <marker date="1408738885748" expanded="true" signature="150:218" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="directives.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/directives.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="11" column="26" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-              <folding>
-                <marker date="1408739338201" expanded="true" signature="15:31" placeholder="/*...*/" />
-                <marker date="1408739338201" expanded="true" signature="101:210" placeholder="[...]" />
-                <marker date="1408739338201" expanded="true" signature="131:209" placeholder="{...}" />
-                <marker date="1408739338201" expanded="true" signature="172:204" placeholder="{...}" />
-                <marker date="1408739338201" expanded="true" signature="242:268" placeholder="[...]" />
-                <marker date="1408739338201" expanded="true" signature="259:267" placeholder="{...}" />
-              </folding>
+            <state line="4" column="0" selection-start="83" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -85,26 +79,8 @@
       <file leaf-file-name="controllers.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/web/js/controllers.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="5" column="22" selection-start="90" selection-end="97" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-              <folding>
-                <marker date="1408738889935" expanded="true" signature="15:32" placeholder="/*...*/" />
-                <marker date="1408738889935" expanded="true" signature="100:135" placeholder="[...]" />
-                <marker date="1408738889935" expanded="true" signature="128:134" placeholder="{...}" />
-                <marker date="1408738889935" expanded="true" signature="162:197" placeholder="[...]" />
-                <marker date="1408738889935" expanded="true" signature="190:196" placeholder="{...}" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="services.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/web/js/services.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="22" selection-start="134" selection-end="140" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
-              <folding>
-                <marker date="1408738873593" expanded="true" signature="15:29" placeholder="/*...*/" />
-                <marker date="1408738873593" expanded="true" signature="32:117" placeholder="//..." />
-              </folding>
+            <state line="10" column="0" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+              <folding />
             </state>
           </provider>
         </entry>
@@ -158,7 +134,6 @@
         <option value="$PROJECT_DIR$/src/CCDI/TVBundle/Controller/DefaultController.php" />
         <option value="$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/Header-2Columns-Footer.html.twig" />
         <option value="$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/Header-2Columns.html.twig" />
-        <option value="$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/Fullscreen.html.twig" />
         <option value="$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/2Columns-Footer.html.twig" />
         <option value="$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/2Columns.html.twig" />
         <option value="$PROJECT_DIR$/src/CCDI/TVBundle/Block/Service/VideoBlockService.php" />
@@ -172,7 +147,6 @@
         <option value="$PROJECT_DIR$/app/config/sonata/sonata_admin.yml" />
         <option value="$PROJECT_DIR$/../SAO/email-15-08-2014/index.html" />
         <option value="$PROJECT_DIR$/web/less/themes.less" />
-        <option value="$PROJECT_DIR$/web/less/main.less" />
         <option value="$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/Block/video.html.twig" />
         <option value="$PROJECT_DIR$/src/CCDI/TVBundle/Block/Service/CCDIMediaBlockService.php" />
         <option value="$PROJECT_DIR$/src/CCDI/TVBundle/Media/Provider/VideoProvider.php" />
@@ -180,11 +154,13 @@
         <option value="$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/Provider/video.html.twig" />
         <option value="$PROJECT_DIR$/web/js/main.js" />
         <option value="$PROJECT_DIR$/web/js/services.js" />
-        <option value="$PROJECT_DIR$/web/js/app.js" />
         <option value="$PROJECT_DIR$/web/js/filters.js" />
-        <option value="$PROJECT_DIR$/web/js/controllers.js" />
-        <option value="$PROJECT_DIR$/web/js/directives.js" />
+        <option value="$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/Fullscreen.html.twig" />
+        <option value="$PROJECT_DIR$/web/less/main.less" />
+        <option value="$PROJECT_DIR$/web/js/app.js" />
         <option value="$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/Default/index.html.twig" />
+        <option value="$PROJECT_DIR$/web/js/directives.js" />
+        <option value="$PROJECT_DIR$/web/js/controllers.js" />
       </list>
     </option>
   </component>
@@ -255,7 +231,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -302,6 +277,24 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
+              <option name="myItemId" value="less" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ccdi" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ccdi-page" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="web" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
               <option name="myItemId" value="js" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -316,46 +309,6 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ccdi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ccdi-page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="web" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="bower_components" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="angular-animate" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ccdi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ccdi-page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
               <option name="myItemId" value="src" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
@@ -409,40 +362,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ccdi" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="ccdi-page" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="CCDI" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="TVBundle" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Default" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -492,6 +411,7 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -501,7 +421,7 @@
     <property name="options.splitter.main.proportions" value="0.3" />
     <property name="options.splitter.details.proportions" value="0.2" />
     <property name="options.searchVisible" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/../zogbi/site" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../radarfit/teaser" />
     <property name="full.screen.before.presentation.mode" value="false" />
     <property name="LayoutCode.rearrangeEntriesLESS" value="false" />
     <property name="LayoutCode.rearrangeEntriesTwig" value="false" />
@@ -576,14 +496,17 @@
       <created>1408738796195</created>
       <updated>1408738796195</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="angular frontend first commit">
+      <created>1408740314668</created>
+      <updated>1408740314668</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="false" />
     <layout>
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -595,16 +518,17 @@
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.2693997" sideWeight="0.5" order="1" side_tool="false" content_ui="combo" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3275862" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3275862" sideWeight="0.5" order="8" side_tool="true" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3275862" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.38050315" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Command Line Tools Console" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.40438873" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
     </layout>
     <layout-to-restore>
@@ -667,11 +591,6 @@
     </PATH>
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/CCDI/TVBundle/CCDITVBundle.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="344" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/vendor/sonata-project/admin-bundle/Admin/Admin.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.7842566" vertical-offset="612" max-vertical-offset="45492" />
@@ -810,11 +729,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="403" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/web/less/main.less">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="180" column="15" selection-start="4667" selection-end="4681" vertical-scroll-proportion="0.0" vertical-offset="2943" max-vertical-offset="7990" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/CCDI/TVBundle/Block/Service/CCDIMediaBlockService.php">
       <provider selected="true" editor-type-id="text-editor">
         <state line="81" column="21" selection-start="2418" selection-end="2418" vertical-scroll-proportion="0.0" vertical-offset="1160" max-vertical-offset="1598" />
@@ -837,16 +751,12 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/web/less/themes.less">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="62" column="33" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0" vertical-offset="949" max-vertical-offset="1326">
-          <folding />
-        </state>
+        <state line="62" column="33" selection-start="754" selection-end="754" vertical-scroll-proportion="0.0" vertical-offset="949" max-vertical-offset="1326" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CCDI/TVBundle/Block/Service/VideoBlockService.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="33" column="0" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1649">
-          <folding />
-        </state>
+        <state line="33" column="0" selection-start="828" selection-end="828" vertical-scroll-proportion="0.0" vertical-offset="561" max-vertical-offset="1649" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/vticker.jquery.js">
@@ -861,59 +771,45 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/sonata-project/media-bundle/Provider/BaseVideoProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="3" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="3825">
-          <folding />
-        </state>
+        <state line="9" column="3" selection-start="246" selection-end="246" vertical-scroll-proportion="0.0" vertical-offset="153" max-vertical-offset="3825" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CCDI/TVBundle/Media/Provider/VideoProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="26" column="8" selection-start="631" selection-end="671" vertical-scroll-proportion="0.80898875" vertical-offset="154" max-vertical-offset="867">
-          <folding />
-        </state>
+        <state line="26" column="8" selection-start="631" selection-end="671" vertical-scroll-proportion="0.80898875" vertical-offset="154" max-vertical-offset="867" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/sonata-project/media-bundle/Provider/FileProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="106" column="4" selection-start="3597" selection-end="3845" vertical-scroll-proportion="0.0" vertical-offset="1802" max-vertical-offset="6681">
-          <folding />
-        </state>
+        <state line="106" column="4" selection-start="3597" selection-end="3845" vertical-scroll-proportion="0.0" vertical-offset="1802" max-vertical-offset="6681" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/vendor/sonata-project/media-bundle/Provider/YouTubeProvider.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4709">
-          <folding />
-        </state>
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="4709" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CCDI/TVBundle/Resources/config/services.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="54" column="58" selection-start="2891" selection-end="2891" vertical-scroll-proportion="0.18858561" vertical-offset="842" max-vertical-offset="1326">
-          <folding />
-        </state>
+        <state line="54" column="58" selection-start="2891" selection-end="2891" vertical-scroll-proportion="0.18858561" vertical-offset="842" max-vertical-offset="1326" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/Provider/video.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="56" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="356">
-          <folding />
-        </state>
+        <state line="0" column="56" selection-start="56" selection-end="56" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="356" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="45" selection-start="3984" selection-end="3984" vertical-scroll-proportion="-0.010471204" vertical-offset="2469" max-vertical-offset="3009">
-          <folding />
-        </state>
+        <state line="145" column="45" selection-start="3984" selection-end="3984" vertical-scroll-proportion="-0.010471204" vertical-offset="2469" max-vertical-offset="3009" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/js/services.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="7" column="22" selection-start="134" selection-end="140" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="255">
           <folding>
-            <marker date="1408738873593" expanded="true" signature="15:29" placeholder="/*...*/" />
-            <marker date="1408738873593" expanded="true" signature="32:117" placeholder="//..." />
+            <marker date="1408738873593" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1408738873593" expanded="true" signature="-1:-1" placeholder="//..." />
           </folding>
         </state>
       </provider>
@@ -922,61 +818,57 @@
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="22" selection-start="52" selection-end="52" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="272">
           <folding>
-            <marker date="1408738885748" expanded="true" signature="15:28" placeholder="/*...*/" />
-            <marker date="1408738885748" expanded="true" signature="92:224" placeholder="[...]" />
-            <marker date="1408738885748" expanded="true" signature="122:223" placeholder="{...}" />
-            <marker date="1408738885748" expanded="true" signature="150:218" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/app.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="9" column="9" selection-start="196" selection-end="196" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
-          <folding>
-            <marker date="1408738878436" expanded="true" signature="108:211" placeholder="[...]" />
-            <marker date="1408738878436" expanded="true" signature="214:521" placeholder="/*...*/" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/controllers.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="5" column="22" selection-start="90" selection-end="97" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="289">
-          <folding>
-            <marker date="1408738889935" expanded="true" signature="15:32" placeholder="/*...*/" />
-            <marker date="1408738889935" expanded="true" signature="100:135" placeholder="[...]" />
-            <marker date="1408738889935" expanded="true" signature="128:134" placeholder="{...}" />
-            <marker date="1408738889935" expanded="true" signature="162:197" placeholder="[...]" />
-            <marker date="1408738889935" expanded="true" signature="190:196" placeholder="{...}" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/web/js/directives.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="11" column="26" selection-start="239" selection-end="239" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="391">
-          <folding>
-            <marker date="1408739338201" expanded="true" signature="15:31" placeholder="/*...*/" />
-            <marker date="1408739338201" expanded="true" signature="101:210" placeholder="[...]" />
-            <marker date="1408739338201" expanded="true" signature="131:209" placeholder="{...}" />
-            <marker date="1408739338201" expanded="true" signature="172:204" placeholder="{...}" />
-            <marker date="1408739338201" expanded="true" signature="242:268" placeholder="[...]" />
-            <marker date="1408739338201" expanded="true" signature="259:267" placeholder="{...}" />
+            <marker date="1408738885748" expanded="true" signature="-1:-1" placeholder="/*...*/" />
+            <marker date="1408738885748" expanded="true" signature="-1:-1" placeholder="[...]" />
+            <marker date="1408738885748" expanded="true" signature="-1:-1" placeholder="{...}" />
+            <marker date="1408738885748" expanded="true" signature="-1:-1" placeholder="{...}" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/web/bower_components/angular/angular.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.176923" vertical-offset="459" max-vertical-offset="370311">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-1.176923" vertical-offset="459" max-vertical-offset="370311" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/less/main.less">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="474" column="15" selection-start="10533" selection-end="10533" vertical-scroll-proportion="-3.4807692" vertical-offset="7877" max-vertical-offset="8296">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/app.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="0" selection-start="83" selection-end="213" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="374">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/controllers.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="10" column="0" selection-start="235" selection-end="235" vertical-scroll-proportion="0.0" vertical-offset="0" max-vertical-offset="306">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/web/js/directives.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="28" selection-start="350" selection-end="350" vertical-scroll-proportion="0.0" vertical-offset="51" max-vertical-offset="765">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/Fullscreen.html.twig">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="3" column="58" selection-start="180" selection-end="180" vertical-scroll-proportion="-1.9615384" vertical-offset="0" max-vertical-offset="221">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/CCDI/TVBundle/Resources/views/Default/index.html.twig">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="86" selection-start="2324" selection-end="2324" vertical-scroll-proportion="0.4509284" vertical-offset="663" max-vertical-offset="1224">
+        <state line="20" column="48" selection-start="896" selection-end="896" vertical-scroll-proportion="0.09018568" vertical-offset="306" max-vertical-offset="1190">
           <folding />
         </state>
       </provider>
